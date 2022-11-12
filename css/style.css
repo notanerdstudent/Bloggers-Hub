@@ -1,9 +1,23 @@
 /* Base CSS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+:root{
+    --yellow: #FEBB12;
+    --orange: #EE7C0F;
+    --persian-blue: #023356;
+    --dark-blue: #061843;
+    --nice-blue: #006FAE;
+    --pink: #E90964;
+    --purple: #AE16CC;
+    --white: #FFFFFF;
+    --grey: #8F9BAD;
+    --light-grey: #EBEBEB;
+    --black: #000000;
+}
+
 body {
-    color: #8f9bad;
-    background-color: #fff;
+    color: var(--grey);
+    background-color: var(--white);
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     line-height: 1.7;
@@ -38,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #203656;
+    color: var(--persian-blue);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     line-height: 1.4;
@@ -46,14 +60,14 @@ h6 {
 }
 
 a {
-    color: #ad1deb;
+    color: var(--pink);
     outline: 0;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #203656;
+    color: var(--persian-blue);
 }
 
 a:focus {
@@ -65,7 +79,7 @@ a:focus {
     opacity: 0;
     visibility: hidden;
     filter: blur(2px);
-    background: #fff;
+    background: var(--white);
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -92,8 +106,8 @@ a:focus {
     position: fixed;
     top: 0;
     left: 0;
-    background: #fff;
-    border-bottom: 1px solid #ebebeb;
+    background: var(--white);
+    border-bottom: 1px solid var(--light-grey);
     right: 0;
     padding: 25px 0;
     transform: translateY(-100%);
@@ -116,19 +130,19 @@ body.down .header-default.clone {
 
 .navbar-nav .nav-link {
     padding: 0.439rem 1rem;
-    color: #79889e;
+    color: var(--grey);
 }
 
 .navbar-nav .nav-link:hover {
-    color: #203656;
+    color: var(--persian-blue);
 }
 
 .navbar-nav li.active .nav-link {
-    color: #fff;
-    background: #6a3093;
+    color: var(--white);
+    background: var(--purple);
     border-radius: 25px;
-    background-color: #6e72fc;
-    background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
+    background-color: var(--dark-blue);
+    background-image: linear-gradient(315deg, var(--dark-blue) 0%, var(--nice-blue) 74%);
 }
 
 .navbar-brand {
@@ -145,14 +159,14 @@ body.down .header-default.clone {
     min-width: 10rem;
     padding: 0;
     margin: 0;
-    color: #212529;
+    color: var(--persian-blue);
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: var(--white);
     background-clip: padding-box;
     border: 0;
     border-radius: 0.25rem;
-    box-shadow: 0 8px 20px rgba(32, 54, 86, 0.2);
+    box-shadow: 0 8px 20px var(--dark-blue);
 }
 
 .dropdown-menu::after {
@@ -165,13 +179,13 @@ body.down .header-default.clone {
     left: 25%;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 10px solid #fff;
+    border-bottom: 10px solid var(--white);
 }
 
 .dropdown-menu li::after {
     content: "";
-    background: #ebebeb;
-    background: linear-gradient(to right, #ebebeb 0%, transparent 100%);
+    background: var(--light-grey);
+    background: linear-gradient(to right, var(--light-grey) 0%, transparent 100%);
     display: block;
     height: 1px;
     width: 100%;
@@ -189,7 +203,7 @@ body.down .header-default.clone {
     clear: both;
     font-weight: 400;
     font-size: 13px;
-    color: #79889e;
+    color: var(--grey);
     text-align: inherit;
     text-decoration: none;
     white-space: nowrap;
@@ -204,7 +218,7 @@ body.down .header-default.clone {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: #ad1deb;
+    color: var(--dark-blue);
     background-color: transparent;
 }
 
@@ -212,7 +226,7 @@ body.down .header-default.clone {
     height: 0;
     margin: 0.1rem 0;
     overflow: hidden;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #DDD;
 }
 
 .dropdown-toggle::after {
@@ -224,14 +238,14 @@ body.down .header-default.clone {
     border-right: transparent;
     border-bottom: 0;
     border-left: transparent;
-    content: "";
+    content: "\25BC";
     font-family: "simple-line-icons";
 }
 
 .burger-icon::before,
 .burger-icon::after {
     content: "";
-    background: #fff;
+    background: var(--white);
     display: block;
     margin: auto;
     height: 1px;
@@ -326,8 +340,8 @@ button:focus {
     color: #fff;
     border: 0;
     border-radius: 50%;
-    background-color: #6e72fc;
-    background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
+    background-color: var(--dark-blue);
+    background-image: linear-gradient(315deg, var(--dark-blue) 0%, var(--nice-blue) 74%);
     background-size: auto 200%;
     display: inline-flex;
     justify-content: center;
@@ -348,11 +362,11 @@ button:focus {
 
 .social-icons a {
     font-size: 16px;
-    color: #203656;
+    color: var(--dark-blue);
 }
 
 .social-icons a:hover {
-    color: #ad1deb;
+    color: var(--nice-blue);
 }
 
 .social-icons li:not(:last-child) {
@@ -361,7 +375,7 @@ button:focus {
 
 /* Canvas Menu */
 .canvas-menu {
-    background: #fff;
+    background: var(--white);
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -386,7 +400,7 @@ button:focus {
     height: 1em;
     position: absolute;
     padding: 0.25em 0.25em;
-    color: #000;
+    color: var(--black);
     border: 0;
     border-radius: 0.25rem;
     opacity: 0.4;
@@ -421,7 +435,7 @@ button:focus {
 }
 
 .canvas-menu .vertical-menu li.openmenu > a {
-    color: #203656;
+    color: var(--nice-blue);
 }
 
 .canvas-menu .vertical-menu li.openmenu .switch {
@@ -436,7 +450,7 @@ button:focus {
 }
 
 .canvas-menu .vertical-menu li a {
-    color: #203656;
+    color: var(--persian-blue);
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -456,15 +470,15 @@ button:focus {
 }
 
 .canvas-menu .vertical-menu li.active a {
-    color: #ad1deb;
+    color: var(--nice-blue);
 }
 
 .canvas-menu .vertical-menu li.active .submenu a {
-    color: #79889e;
+    color: var(--grey);
 }
 
 .canvas-menu .vertical-menu li.active .submenu a:hover {
-    color: #203656;
+    color: var(--dark-blue);
 }
 
 .canvas-menu .submenu {
@@ -482,14 +496,14 @@ button:focus {
 }
 
 .canvas-menu .vertical-menu li .switch {
-    border: 1px solid #ebebeb;
+    border: 1px solid var(--dark-blue);
     border-radius: 5px;
     font-size: 10px;
     display: inline-block;
     padding: 10px;
     line-height: 1;
     cursor: pointer;
-    color: #ad1deb;
+    color: var(--nice-blue);
     position: absolute;
     top: 0;
     right: 0;
@@ -532,7 +546,7 @@ button:focus {
 }
 
 .btn {
-    color: #fff;
+    color: var(--white);
     border: 0;
     border-radius: 25px;
     font-family: "Roboto", sans-serif;
@@ -553,10 +567,10 @@ button:focus {
 }
 
 .btn-default {
-    color: #fff;
+    color: var(--white);
     padding: 9.5px 36px;
-    background-color: #6e72fc;
-    background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
+    background-color: var(--dark-blue);
+    background-image: linear-gradient(315deg, var(--dark-blue) 0%, var(--nice-blue) 74%);
     background-size: 200% auto;
 }
 
@@ -577,15 +591,15 @@ button:focus {
     padding: 8px 24px;
     font-size: 14px;
     line-height: 1.6;
-    color: #8f9bad;
-    background-color: #fff;
+    color: var(--grey);
+    background-color: var(--white);
     background-image: none;
-    border: 1px solid #ebebeb;
+    border: 1px solid var(--light-grey);
     box-shadow: none;
 }
 
 .form-control:focus {
-    border-color: #ad1deb;
+    border-color: var(--nice-blue);
     outline: 0;
     box-shadow: none;
 }
