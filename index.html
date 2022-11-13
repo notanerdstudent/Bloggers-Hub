@@ -21,758 +21,900 @@
   </head>
 
   <body>
-    <div class="site-wrapper">
-      <div class="main-wrapper"></div>
-      <!-- Header -->
-      <header class="header-default">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-xl">
-            <!-- Logo  -->
-            <a href="index.html" class="navbar-brand">
-              <img src="./assets/images/logo.png" alt="" />
-            </a>
+    <div class="loader-wrapper">
+      <div class="loading-container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span class="loading">Loading....</span>
+      </div>
+    </div>
 
-            <div class="collapse navbar-collapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown active">
-                  <a href="index.html" class="nav-link dropdown-toggle">Home</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#" class="dropdown-item">Technology</a>
+    <div class="site-content">
+      <div class="site-wrapper">
+        <div class="main-wrapper"></div>
+        <!-- Header -->
+        <header class="header-default">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-xl">
+              <!-- Logo  -->
+              <a href="index.html" class="navbar-brand">
+                <img src="./assets/images/logo.png" alt="" />
+              </a>
+  
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown active">
+                    <a href="index.html" class="nav-link dropdown-toggle">Home</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#" class="dropdown-item">Technology</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Fashion</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Entertainment</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Sports</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Lifestyle</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Latest</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Trending</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Right Section Header -->
+              <div class="header-right">
+                <ul class="social-icons list-unstyled list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                </ul>
+  
+                <!-- Buttons -->
+                <div class="header-buttons">
+                  <button class="search icon-button">
+                    <i class="icon-magnifier"></i>
+                  </button>
+                  <button class="burger-menu icon-button">
+                    <span class="burger-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+  
+        <!-- Section -->
+        <section id="hero">
+          <div class="container-xl">
+            <div class="row gy-4">
+              <div class="col-lg-8">
+                <div class="post featured-post-lg">
+                  <div class="details clearfix">
+                    <a href="#" class="category-badge">Technology</a>
+                    <h2 class="post-title">
+                      <a href="#"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hic, excepturi.</a
+                      >
+                    </h2>
+                    <ul class="meta list-inline mb-0">
+                      <li class="list-inline-item">
+                        <a href="#">John Doe</a>
+                      </li>
+                      <li class="list-inline-item">12 November 2022</li>
+                    </ul>
+                  </div>
+                  <a href="#">
+                    <div class="thumb rounded">
+                      <div
+                        class="inner data-bg-image"
+                        data-bg-image="./assets/images/posts/featured-post-lg.jpg"
+                      ></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="post-tabs rounded bordered">
+                  <ul
+                    class="nav nav-tabs nav-pills nav-fill"
+                    id="postTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        aria-controls="popular"
+                        aria-selected="true"
+                        class="nav-link active"
+                        data-bs-target="#popular"
+                        data-bs-toggle="tab"
+                        id="popular-tab"
+                        role="tab"
+                        type="button"
+                      >
+                        Popular
+                      </button>
                     </li>
-                    <li>
-                      <a href="#" class="dropdown-item">Fashion</a>
-                    </li>
-                    <li>
-                      <a href="#" class="dropdown-item">Entertainment</a>
-                    </li>
-                    <li>
-                      <a href="#" class="dropdown-item">Sports</a>
-                    </li>
-                    <li>
-                      <a href="#" class="dropdown-item">Lifestyle</a>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        aria-controls="recent"
+                        aria-selected="false"
+                        class="nav-link"
+                        data-bs-target="#recent"
+                        data-bs-toggle="tab"
+                        id="recent-tab"
+                        role="tab"
+                        type="button"
+                      >
+                        Recent
+                      </button>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Latest</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Trending</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <!-- Right Section Header -->
-            <div class="header-right">
-              <ul class="social-icons list-unstyled list-inline mb-0">
-                <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-pinterest"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-              </ul>
-
-              <!-- Buttons -->
-              <div class="header-buttons">
-                <button class="search icon-button">
-                  <i class="icon-magnifier"></i>
-                </button>
-                <button class="burger-menu icon-button">
-                  <span class="burger-icon"></span>
-                </button>
+  
+                  <!-- Content  -->
+                  <div class="tab-content" id="postsTabContent">
+                    <!-- Loader -->
+                    <div class="lds-dual-ring"></div>
+                    <!-- Pop Post  -->
+  
+                    <div
+                      class="tab-pane fade show active"
+                      id="popular"
+                      aria-labelledby="popular-tab"
+                      role="tabpanel"
+                    >
+                      <!-- Post  -->
+                      <div class="post post-list-sm circle">
+                        <div class="thumb circle">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/tabs-1.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor sit amet consectetur.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">12 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Post 2  -->
+                      <div class="post post-list-sm circle">
+                        <div class="thumb circle">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/tabs-2.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor sit amet consectetur.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">14 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Post 3  -->
+                      <div class="post post-list-sm circle">
+                        <div class="thumb circle">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/tabs-3.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor sit amet consectetur.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">10 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Post 4  -->
+                      <div class="post post-list-sm circle">
+                        <div class="thumb circle">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/tabs-4.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor sit amet consectetur.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">11 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <!-- Recent  -->
+                    <div
+                      class="tab-pane fade"
+                      id="recent"
+                      aria-labelledby="recent-tab"
+                      role="tabpanel"
+                    >
+                      <!-- Post -->
+                      <div class="post post-list-sm circle">
+                        <div class="thumb circle">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/tabs-5.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor sit amet consectetur.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">11 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Post 2  -->
+                      <div class="post post-list-sm circle">
+                        <div class="thumb circle">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/tabs-6.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor sit amet consectetur.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">12 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Post 3  -->
+                      <div class="post post-list-sm circle">
+                        <div class="thumb circle">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/tabs-7.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">9 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Post 4  -->
+                      <div class="post post-list-sm circle">
+                        <div class="thumb circle">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/tabs-8.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor, sit amet consectetur
+                              adipisicing.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">10 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </nav>
-      </header>
-
-      <!-- Section -->
-      <section id="hero">
-        <div class="container-xl">
-          <div class="row gy-4">
-            <div class="col-lg-8">
-              <div class="post featured-post-lg">
-                <div class="details clearfix">
-                  <a href="#" class="category-badge">Technology</a>
-                  <h2 class="post-title">
-                    <a href="#"
-                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Hic, excepturi.</a
-                    >
-                  </h2>
-                  <ul class="meta list-inline mb-0">
-                    <li class="list-inline-item">
-                      <a href="#">John Doe</a>
-                    </li>
-                    <li class="list-inline-item">12 November 2022</li>
-                  </ul>
+        </section>
+  
+        <!-- Main Content -->
+        <section class="main-content">
+          <div class="container-xl">
+            <div class="row-gy-4">
+              <!-- Left Part -->
+              <div class="col-lg-8">
+                <!-- 4 List Section -->
+                <div class="section-header">
+                  <h3 class="section-title">Editor's Pick</h3>
                 </div>
-                <a href="#">
-                  <div class="thumb rounded">
-                    <div
-                      class="inner data-bg-image"
-                      data-bg-image="./assets/images/posts/featured-post-lg.jpg"
-                    ></div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="post-tabs rounded bordered">
-                <ul
-                  class="nav nav-tabs nav-pills nav-fill"
-                  id="postTab"
-                  role="tablist"
-                >
-                  <li class="nav-item" role="presentation">
-                    <button
-                      aria-controls="popular"
-                      aria-selected="true"
-                      class="nav-link active"
-                      data-bs-target="#popular"
-                      data-bs-toggle="tab"
-                      id="popular-tab"
-                      role="tab"
-                      type="button"
-                    >
-                      Popular
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      aria-controls="recent"
-                      aria-selected="false"
-                      class="nav-link"
-                      data-bs-target="#recent"
-                      data-bs-toggle="tab"
-                      id="recent-tab"
-                      role="tab"
-                      type="button"
-                    >
-                      Recent
-                    </button>
-                  </li>
-                </ul>
-
-                <!-- Content  -->
-                <div class="tab-content" id="postsTabContent">
-                  <!-- Loader -->
-                  <div class="lds-dual-ring"></div>
-                  <!-- Pop Post  -->
-
-                  <div
-                    class="tab-pane fade show active"
-                    id="popular"
-                    aria-labelledby="popular-tab"
-                    role="tabpanel"
-                  >
-                    <!-- Post  -->
-                    <div class="post post-list-sm circle">
-                      <div class="thumb circle">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/tabs-1.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"
-                            >Lorem ipsum dolor sit amet consectetur.</a
+  
+                <div class="padding-30 rounded bordered">
+                  <div class="row gy-5">
+                    <div class="col-sm-6">
+                      <!-- Post  -->
+                      <div class="post">
+                        <div class="thumb rounded">
+                          <a href="#" class="category-badge position-absolute"
+                            >Lifestyle</a
                           >
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">12 November 2022</li>
+                          <span class="post-format">
+                            <i class="fas fa-star-of-life"></i>
+                          </span>
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/editors-lg.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <ul class="meta list-inline mt-4 mb-0">
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <img
+                                class="author"
+                                src="./assets/images/other/author-sm.jpg"
+                                alt=""
+                              />
+                              John Doe
+                            </a>
+                          </li>
+                          <li class="list-inline-item">15 November 2022</li>
                         </ul>
-                      </div>
-                    </div>
-                    <!-- Post 2  -->
-                    <div class="post post-list-sm circle">
-                      <div class="thumb circle">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/tabs-2.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"
-                            >Lorem ipsum dolor sit amet consectetur.</a
-                          >
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">14 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- Post 3  -->
-                    <div class="post post-list-sm circle">
-                      <div class="thumb circle">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/tabs-3.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"
-                            >Lorem ipsum dolor sit amet consectetur.</a
-                          >
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">10 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- Post 4  -->
-                    <div class="post post-list-sm circle">
-                      <div class="thumb circle">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/tabs-4.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"
-                            >Lorem ipsum dolor sit amet consectetur.</a
-                          >
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">11 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Recent  -->
-                  <div
-                    class="tab-pane fade"
-                    id="recent"
-                    aria-labelledby="recent-tab"
-                    role="tabpanel"
-                  >
-                    <!-- Post -->
-                    <div class="post post-list-sm circle">
-                      <div class="thumb circle">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/tabs-5.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"
-                            >Lorem ipsum dolor sit amet consectetur.</a
-                          >
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">11 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- Post 2  -->
-                    <div class="post post-list-sm circle">
-                      <div class="thumb circle">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/tabs-6.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"
-                            >Lorem ipsum dolor sit amet consectetur.</a
-                          >
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">12 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- Post 3  -->
-                    <div class="post post-list-sm circle">
-                      <div class="thumb circle">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/tabs-7.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#">Lorem ipsum dolor sit amet.</a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">9 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- Post 4  -->
-                    <div class="post post-list-sm circle">
-                      <div class="thumb circle">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/tabs-8.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
+                        <h5 class="post-title mb-3 mt-3">
                           <a href="#"
                             >Lorem ipsum dolor, sit amet consectetur
                             adipisicing.</a
                           >
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">10 November 2022</li>
-                        </ul>
+                        </h5>
+                        <p class="excerpt mb-0">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Libero assumenda rerum enim minima reiciendis
+                          velit!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="post post-list-sm square">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/editor-side-1.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"> Lorem ipsum dolor sit amet. </a>
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">13 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="post post-list-sm square">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/editor-side-2.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"> Lorem ipsum dolor sit amet. </a>
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">13 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="post post-list-sm square">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/editor-side-3.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"> Lorem ipsum dolor sit amet. </a>
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">13 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="post post-list-sm square">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/editor-side-4.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"> Lorem ipsum dolor sit amet. </a>
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">13 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="post post-list-sm square">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/editor-side-5.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"> Lorem ipsum dolor sit amet. </a>
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">13 November 2022</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Main Content -->
-      <section class="main-content">
-        <div class="container-xl">
-          <div class="row-gy-4">
-            <!-- Left Part -->
-            <div class="col-lg-8">
-              <div class="section-header">
-                <h3 class="section-title">Editor's Pick</h3>
-              </div>
-
-              <div class="padding-30 rounded bordered">
-                <div class="row gy-5">
-                  <div class="col-sm-6">
-                    <!-- Post  -->
-                    <div class="post">
-                      <div class="thumb rounded">
-                        <a href="#" class="category-badge position-absolute"
-                          >Lifestyle</a
-                        >
-                        <span class="post-format">
-                          <i class="icon-picture"></i>
-                        </span>
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/editors-lg.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <ul class="meta list-inline mt-4 mb-0">
-                        <li class="list-inline-item">
-                          <a href="#">
-                            <img
-                              class="author"
-                              src="./assets/images/other/author-sm.jpg"
-                              alt=""
-                            />
-                            John Doe
+  
+                <!-- 2-4-6 Grid Section -->
+                <div class="spacer" data-height="50"></div>
+  
+                <div class="section-header">
+                  <h3 class="section-title">Trending</h3>
+                </div>
+  
+                <div class="padding-30 rounded bordered">
+                  <div class="row gy-5">
+                    <div class="col-sm-6">
+                      <div class="post">
+                        <div class="thumb rounded">
+                          <a href="" class="category-badge position-absolute">
+                            Finance
                           </a>
+                          <span class="post-format">
+                            <i class="fas fa-coins"></i>
+                          </span>
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/trending-lg-1.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <ul class="meta list-inline mt-4 mb-0">
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <img
+                                src="./assets/images/other/author-sm.jpg"
+                                class="author"
+                                alt=""
+                              />
+                              John Doe
+                            </a>
+                          </li>
+                          <li class="list-inline-item">8 November 2022</li>
+                        </ul>
+                        <h5 class="post-title mb-3 mt-3">
+                          <a href="#"
+                            >Lorem ipsum dolor, sit amet consectetur
+                            adipisicing.</a
+                          >
+                        </h5>
+                        <p class="excerpt mb-0">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Aliquid iure similique odio perferendis, provident
+                          saepe!
+                        </p>
+                      </div>
+                      <div class="post post-list-sm square before-seperator">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/trending-sm-1.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor sit amet consectetur.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">1 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="post post-list-sm square before-seperator">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/trending-sm-2.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#"
+                              >Lorem ipsum dolor sit amet consectetur.</a
+                            >
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">1 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="post">
+                        <div class="thumb rounded">
+                          <a href="" class="category-badge position-absolute">
+                            Technology
+                          </a>
+                          <span class="post-format">
+                            <i class="fas fa-microchip"></i>
+                          </span>
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/trending-lg-2.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <ul class="meta list-inline mt-4 mb-0">
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <img
+                                src="./assets/images/other/author-sm.jpg"
+                                class="author"
+                                alt=""
+                              />
+                              John Doe
+                            </a>
+                          </li>
+                          <li class="list-inline-item">8 November 2022</li>
+                        </ul>
+                        <h5 class="post-title mb-3 mt-3">
+                          <a href="#"
+                            >Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.</a
+                          >
+                        </h5>
+                        <p class="excerpt mb-0">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Aliquid iure similique odio perferendis, provident
+                          saepe!
+                        </p>
+                      </div>
+                      <div class="post post-list-sm square before-seperator">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/trending-sm-3.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#">Lorem ipsum dolor sit.</a>
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">2 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="post post-list-sm square before-seperator">
+                        <div class="thumb rounded">
+                          <a href="#">
+                            <div class="inner">
+                              <img
+                                src="./assets/images/posts/trending-sm-4.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </a>
+                        </div>
+                        <div class="details clearfix">
+                          <h6 class="post-title my-0">
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                          </h6>
+                          <ul class="meta list-inline mt-1 mb-0">
+                            <li class="list-inline-item">3 November 2022</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Carousel -->
+                <div class="spacer" data-height="50"></div>
+  
+                <div class="section-header">
+                  <h3 class="section-title">Inspiration</h3>
+                  <div class="slick-arrows-top">
+                    <buttton
+                      class="carousel-topNav-prev slick-custom-buttons"
+                      type="button"
+                      data-role="none"
+                      aria-label="Previous"
+                    >
+                      <i class="icon-arrow-left"></i>
+                    </buttton>
+                    <buttton
+                      class="carousel-topNav-next slick-custom-buttons"
+                      type="button"
+                      data-role="none"
+                      aria-label="Next"
+                    >
+                      <i class="icon-arrow-right"></i>
+                    </buttton>
+                  </div>
+                </div>
+  
+                <div class="row post-carousel-twoCol post-carousel">
+                  <div class="post post-over-content col-md-6">
+                    <div class="details clearfix">
+                      <a href="#" class="category-badge">Technology</a>
+                      <h4 class="post-title">
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                      </h4>
+                      <ul class="meta list-inline mb-0">
+                        <li class="list-inline-item">
+                          <a href="#">John Doe</a>
                         </li>
-                        <li class="list-inline-item">15 November 2022</li>
+                        <li class="list-inline-item">13 November 2022</li>
                       </ul>
-                      <h5 class="post-title mb-3 mt-3">
+                    </div>
+                    <a href="#">
+                      <div class="thumb rounded">
+                        <div class="inner">
+                          <img src="./assets/images/posts/carousel-1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+  
+                  <div class="post post-over-content col-md-6">
+                    <div class="details clearfix">
+                      <a href="#" class="category-badge">Lifestyle</a>
+                      <h4 class="post-title">
                         <a href="#"
-                          >Lorem ipsum dolor, sit amet consectetur
-                          adipisicing.</a
+                          >Lorem ipsum dolor sit amet.</a
                         >
-                      </h5>
-                      <p class="excerpt mb-0">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Libero assumenda rerum enim minima reiciendis
-                        velit!
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="post post-list-sm square">
-                      <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/editor-side-1.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"> Lorem ipsum dolor sit amet. </a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">13 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="post post-list-sm square">
-                      <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/editor-side-2.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"> Lorem ipsum dolor sit amet. </a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">13 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="post post-list-sm square">
-                      <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/editor-side-3.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"> Lorem ipsum dolor sit amet. </a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">13 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="post post-list-sm square">
-                      <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/editor-side-4.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"> Lorem ipsum dolor sit amet. </a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">13 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="post post-list-sm square">
-                      <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/editor-side-5.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#"> Lorem ipsum dolor sit amet. </a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">13 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="spacer" data-height="50"></div>
-
-              <div class="section-header">
-                <h3 class="section-title">Trending</h3>
-              </div>
-
-              <div class="padding-30 rounded bordered">
-                <div class="row gy-5">
-                  <div class="col-sm-6">
-                    <div class="post">
-                      <div class="thumb rounded">
-                        <a href="" class="category-badge position-absolute">
-                          Finance
-                        </a>
-                        <span class="post-format">
-                          <i class="icon-picture"></i>
-                        </span>
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/trending-lg-1.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <ul class="meta list-inline mt-4 mb-0">
+                      </h4>
+                      <ul class="meta list-inline mb-0">
                         <li class="list-inline-item">
-                          <a href="#">
-                            <img src="./assets/images/other/author-sm.jpg" class="author" alt="">
-                            John Doe
-                          </a>
+                          <a href="#">John Doe</a>
                         </li>
-                        <li class="list-inline-item">8 November 2022</li>
+                        <li class="list-inline-item">13 November 2022</li>
                       </ul>
-                      <h5 class="post-title mb-3 mt-3">
-                        <a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing.</a>
-                      </h5>
-                      <p class="excerpt mb-0">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iure similique odio perferendis, provident saepe!
-                      </p>
-
                     </div>
-                    <div class="post post-list-sm square before-seperator">
+                    <a href="#">
                       <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img src="./assets/images/posts/trending-sm-1.jpg" alt="">
-                          </div>
-                        </a>
+                        <div class="inner">
+                          <img src="./assets/images/posts/carousel-2.jpg" alt="" />
+                        </div>
                       </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">1 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="post post-list-sm square before-seperator">
-                      <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img src="./assets/images/posts/trending-sm-2.jpg" alt="">
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">1 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
+                    </a>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="post">
-                      <div class="thumb rounded">
-                        <a href="" class="category-badge position-absolute">
-                          Technology
-                        </a>
-                        <span class="post-format">
-                          <i class="icon-picture"></i>
-                        </span>
-                        <a href="#">
-                          <div class="inner">
-                            <img
-                              src="./assets/images/posts/trending-lg-2.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <ul class="meta list-inline mt-4 mb-0">
+  
+                  <div class="post post-over-content col-md-6">
+                    <div class="details clearfix">
+                      <a href="#" class="category-badge">Sports</a>
+                      <h4 class="post-title">
+                        <a href="#"
+                          >Lorem ipsum dolor sit amet consectetur.</a
+                        >
+                      </h4>
+                      <ul class="meta list-inline mb-0">
                         <li class="list-inline-item">
-                          <a href="#">
-                            <img src="./assets/images/other/author-sm.jpg" class="author" alt="">
-                            John Doe
-                          </a>
+                          <a href="#">John Doe</a>
                         </li>
-                        <li class="list-inline-item">8 November 2022</li>
+                        <li class="list-inline-item">14 November 2022</li>
                       </ul>
-                      <h5 class="post-title mb-3 mt-3">
-                        <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a>
-                      </h5>
-                      <p class="excerpt mb-0">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iure similique odio perferendis, provident saepe!
-                      </p>
-
                     </div>
-                    <div class="post post-list-sm square before-seperator">
+                    <a href="#">
                       <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img src="./assets/images/posts/trending-sm-3.jpg" alt="">
-                          </div>
-                        </a>
+                        <div class="inner">
+                          <img src="./assets/images/posts/carousel-3.jpg" alt="" />
+                        </div>
                       </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#">Lorem ipsum dolor sit.</a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">2 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="post post-list-sm square before-seperator">
-                      <div class="thumb rounded">
-                        <a href="#">
-                          <div class="inner">
-                            <img src="./assets/images/posts/trending-sm-4.jpg" alt="">
-                          </div>
-                        </a>
-                      </div>
-                      <div class="details clearfix">
-                        <h6 class="post-title my-0">
-                          <a href="#">Lorem ipsum dolor sit amet.</a>
-                        </h6>
-                        <ul class="meta list-inline mt-1 mb-0">
-                          <li class="list-inline-item">3 November 2022</li>
-                        </ul>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Canvas Menu -->
-    <div class="canvas-menu d-flex align-items-end flex-column">
-      <button class="btn-close" aria-label="Close" type="button"></button>
-
-      <div class="logo">
-        <img src="./assets/images/logo.png" alt="" />
+        </section>
       </div>
-      <nav>
-        <ul class="vertical-menu">
-          <li class="active">
-            <a href="index.html">Home</a>
-            <ul class="submenu">
-              <li><a href="#">Technology</a></li>
-              <li><a href="#">Fashion</a></li>
-              <li><a href="#">Entertainment</a></li>
-              <li><a href="#">Sports</a></li>
-              <li><a href="#">Lifestyle</a></li>
-            </ul>
+  
+      <!-- Canvas Menu -->
+      <div class="canvas-menu d-flex align-items-end flex-column">
+        <button class="btn-close" aria-label="Close" type="button"></button>
+  
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="" />
+        </div>
+        <nav>
+          <ul class="vertical-menu">
+            <li class="active">
+              <a href="index.html">Home</a>
+              <ul class="submenu">
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Lifestyle</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Latest</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Trending</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <ul class="social-icons list-unstyled list-inline mb-0 mt-auto w-100">
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
           </li>
-          <li>
-            <a href="#" class="nav-link">Latest</a>
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </li>
-          <li>
-            <a href="#" class="nav-link">Trending</a>
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-pinterest"></i></a>
           </li>
-          <li>
-            <a href="#" class="nav-link">About Us</a>
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-youtube"></i></a>
           </li>
-          <li>
-            <a href="#" class="nav-link">Contact Us</a>
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="social-icons list-unstyled list-inline mb-0 mt-auto w-100">
-        <li class="list-inline-item">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#"><i class="fab fa-pinterest"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Search Pop up -->
-    <div class="search-popup">
-      <button class="btn-close" aria-label="Close" type="button"></button>
-
-      <div class="search-content">
-        <div class="text-center">
-          <h3 class="mb-4 mt-0">Press ESC to close</h3>
+      </div>
+  
+      <!-- Search Pop up -->
+      <div class="search-popup">
+        <button class="btn-close" aria-label="Close" type="button"></button>
+  
+        <div class="search-content">
+          <div class="text-center">
+            <h3 class="mb-4 mt-0">Press ESC to close</h3>
+          </div>
+  
+          <form action="" class="d-flex search-form">
+            <input
+              type="search"
+              placeholder="Search and press enter ..."
+              aria-label="Search"
+              class="form-control me-2"
+            />
+            <button class="btn btn-default btn-lg" type="submit">
+              <i class="icon-magnifier"></i>
+            </button>
+          </form>
         </div>
-
-        <form action="" class="d-flex search-form">
-          <input
-            type="search"
-            placeholder="Search and press enter ..."
-            aria-label="Search"
-            class="form-control me-2"
-          />
-          <button class="btn btn-default btn-lg" type="submit">
-            <i class="icon-magnifier"></i>
-          </button>
-        </form>
       </div>
     </div>
 

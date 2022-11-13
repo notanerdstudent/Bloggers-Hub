@@ -1,5 +1,75 @@
+$(window).on("load", function(){
+  $('.loader-wrapper').fadeOut('slow');
+  $('.site-content').fadeIn('slow');
+});
+
 $(document).ready(function () {
   "use strict";
+
+  $(".post-carousel-twoCol").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 2,
+    slidesToSCroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToSCroll: 2,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToSCroll: 1,
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
+  });
+
+  $(".carousel-topNav-prev").click(function () {
+    $(".post-carousel-twoCol").slick("slickPrev");
+  });
+  $(".carousel-topNav-next").click(function () {
+    $(".post-carousel-twoCol").slick("slickNext");
+  });
+
+  $(".post-carousel-widget").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToSCroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToSCroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToSCroll: 1,
+          centerMode: true,
+        },
+      },
+    ],
+  });
+
+  $(".carousel-botNav-prev").click(function () {
+    $(".post-carousel-widget").slick("slickPrev");
+  });
+  $(".carousel-botNav-next").click(function () {
+    $(".post-carousel-widget").slick("slickNext");
+  });
 
   var $header = $(".header-default"),
     $clone = $header.before($header.clone().addClass("clone"));
