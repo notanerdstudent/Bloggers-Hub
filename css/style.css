@@ -538,14 +538,14 @@ button:focus {
 }
 
 .canvas-menu .vertical-menu li .switch {
-    border: 1px solid var(--dark-blue);
-    border-radius: 5px;
+    border: 1px solid var(--nice-blue);
+    border-radius: 50%;
     font-size: 10px;
     display: inline-block;
-    padding: 10px;
+    padding: 8px;
     line-height: 1;
     cursor: pointer;
-    color: var(--nice-blue);
+    color: var(--dark-blue);
     position: absolute;
     top: 0;
     right: 0;
@@ -1359,7 +1359,7 @@ section {
     font-size: 11px;
     vertical-align: middle;
     margin-right: 25px;
-    content: "\25BC";
+    content: "";
 }
 
 .widget ul.list li a:hover {
@@ -1386,6 +1386,100 @@ section {
 .widget ul.list li:last-child::after {
     content: "";
     display: none;
+}
+
+/* Newsletter Section */
+.newsletter-headline {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--dark-blue);
+    display: block;
+}
+
+.newsletter-privacy {
+    font-size: 13px;
+    display: block;
+}
+
+.btn-default {
+    color: var(--white);
+    padding: 9.5px 36px;
+    background-color: var(--dark-blue);
+    background-image: linear-gradient(
+        315deg,
+        var(--dark-blue) 0%,
+        var(--nice-blue) 50%
+    );
+    background-size: 200% auto;
+}
+
+.btn-default:hover {
+    color: var(--white);
+    background-position: right center;
+}
+
+.btn-full {
+    padding: 9.5px 36px;
+    width: 100%;
+}
+
+/* Bottom Carousel */
+.slick-arrows-bot {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Tags */
+.tag {
+    color: var(--grey);
+    border: 1px solid var(--grey);
+    border-radius: 25px;
+    font-size: 13px;
+    display: inline-block;
+    padding: 3px 14px;
+    margin: 4px 0;
+}
+
+.tag:hover {
+    border-color: var(--dark-blue);
+    color: var(--nice-blue);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+}
+
+footer .footer-inner {
+    border-top: 1px solid var(--light-grey);
+    padding: 40px 0;
+}
+
+footer .footer-inner .copyright {
+    color: var(--grey);
+}
+
+#return-to-top {
+    color: var(--grey);
+    font-size: 13px;
+    border: 1px solid var(--light-grey);
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 20px;
+    z-index: 4;
+    transition: all 0.3s ease-in-out;
+}
+
+#return-to-top i {
+    font-size: 11px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#return-to-top:hover {
+    color: var(--dark-blue);
+    border-color: var(--persian-blue);
 }
 
 /* Responsive */
