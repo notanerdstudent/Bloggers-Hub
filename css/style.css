@@ -123,32 +123,6 @@ a:focus {
     font-size: 18px;
     font-family: "Rubik Bubbles", cursive;
 }
-@keyframes rotate1 {
-    0% {
-        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-    }
-    100% {
-        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-    }
-}
-
-@keyframes rotate2 {
-    0% {
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-    }
-    100% {
-        transform: rotateX(50deg) rotateY(-10deg) rotateZ(360deg);
-    }
-}
-
-@keyframes rotate3 {
-    0% {
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-    }
-    100% {
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-    }
-}
 
 /* Header CSS */
 .site-wrapper .main-overlay {
@@ -898,16 +872,6 @@ section {
     animation: lds-dual-ring 1.2s linear infinite;
 }
 
-@keyframes lds-dual-ring {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .nav-fill .nav-item,
 .nav-fill > .nav-link {
     margin-right: 10px;
@@ -1482,6 +1446,44 @@ footer .footer-inner .copyright {
     border-color: var(--persian-blue);
 }
 
+/* Keyframes */
+@keyframes rotate1 {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(-10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Responsive */
 
 @media (min-width: 992px) {
@@ -1567,10 +1569,6 @@ footer .footer-inner .copyright {
     }
     .post .meta li:not(:last-child) {
         margin-right: 0.3rem;
-    }
-    .instagram-feed .insta-item {
-        text-align: center;
-        margin: 2.5px 0;
     }
     .footer-inner {
         text-align: center;
