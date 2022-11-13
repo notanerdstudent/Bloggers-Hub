@@ -3,13 +3,11 @@
 
 :root {
   --yellow: #febb12;
-  --orange: #ee7c0f;
   --persian-blue: #023356;
   --dark-blue: #061843;
   --nice-blue: #006fae;
   --light-greenish-blue: #138086;
   --bright-blue: #4adede;
-  --pink: #ea4492;
   --purple: #ae16cc;
   --white: #ffffff;
   --grey: #8f9bad;
@@ -62,7 +60,7 @@ h6 {
 }
 
 a {
-  color: var(--pink);
+  color: var(--nice-blue);
   outline: 0;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -1264,12 +1262,12 @@ section {
 }
 
 .post .post-bottom .social-share .icons li a {
-  color: #9faabb;
+  color: var(--grey);
   font-size: 14px;
 }
 
 .post .post-bottom .social-share .icons li a:hover {
-  color: #ad1deb;
+  color: var(--dark-blue);
 }
 
 .post .post-bottom .social-share .icons li:not(:last-child) {
@@ -1279,18 +1277,18 @@ section {
 .post .post-bottom .more-button a {
   font-size: 16px;
   font-weight: 700;
-  color: #9faabb;
+  color: var(--grey);
 }
 
 .post .post-bottom .more-button a i {
-  color: #9faabb;
+  color: var(--grey);
   font-size: 12px;
   margin-left: 10px;
   vertical-align: middle;
 }
 
 .post .post-bottom .more-button a:hover {
-  color: #ad1deb;
+  color: var(--persian-blue);
 }
 
 .post.post-list::after {
@@ -1300,12 +1298,12 @@ section {
   margin-bottom: 30px;
   margin-top: 30px;
   width: 100%;
-  background: #ebebeb;
-  background: linear-gradient(to left, #ebebeb 0%, transparent 100%);
+  background: var(--light-grey);
+  background: linear-gradient(to left, var(--light-grey) 0%, transparent 100%);
 }
 
 .post .post-format-sm {
-  color: #fff;
+  color: var(--white);
   display: block;
   border-radius: 50%;
   font-size: 14px;
@@ -1317,19 +1315,23 @@ section {
   position: absolute;
   width: 30px;
   box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: #6e72fc;
-  background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
+  background-color: var(--dark-blue);
+  background-image: linear-gradient(
+    315deg,
+    var(--dark-blue) 0%,
+    var(--light-greenish-blue) 50%
+  );
   z-index: 1;
 }
 
 .btn-simple {
-  color: #8f9bad;
+  color: var(--grey);
   padding: 9.5px 36px;
   background: transparent;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--grey);
 }
 
 .btn-simple:hover {
-  color: #ad1deb;
-  border-color: #ad1deb;
+  color: var(--persian-blue);
+  border-color: var(--dark-blue);
 }
