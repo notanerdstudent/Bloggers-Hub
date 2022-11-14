@@ -1,5 +1,5 @@
 /* Base CSS */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap");
 
 :root {
     --yellow: #febb12;
@@ -740,24 +740,24 @@ section {
 }
 
 .featured-post-lg,
-.about-showcase {
+.custom-showcase {
     position: relative;
 }
 
 .featured-post-lg:hover .thumb .inner,
-.about-showcase:hover .thumb .inner {
+.custom-showcase:hover .thumb .inner {
     transform: scale(1.05);
 }
 
 .featured-post-lg .thumb,
-.about-showcase .thumb {
+.custom-showcase .thumb {
     position: relative;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(32, 54, 86, 0.3);
 }
 
 .featured-post-lg .thumb::after,
-.about-showcase .thumb::after {
+.custom-showcase .thumb::after {
     content: "";
     background: var(--dark-blue);
     display: block;
@@ -770,7 +770,7 @@ section {
 }
 
 .featured-post-lg .details,
-.about-showcase .details {
+.custom-showcase .details {
     bottom: 50px;
     left: 50px;
     right: 50px;
@@ -779,17 +779,17 @@ section {
 }
 
 .featured-post-lg .post-title,
-.about-showcase .post-title {
+.custom-showcase .post-title {
     font-size: 32px;
 }
 
 .featured-post-lg .post-title a,
-.about-showcase .post-title {
+.custom-showcase .post-title {
     color: var(--white);
 }
 
 .featured-post-lg .thumb .inner,
-.about-showcase .thumb .inner {
+.custom-showcase .thumb .inner {
     background-size: cover;
     background-position: center center;
     height: 533px;
@@ -1561,7 +1561,7 @@ footer .footer-inner .copyright {
 
 @media only screen and (max-width: 767px) {
     .featured-post-lg .thumb .inner,
-    .about-showcase .thumb .inner {
+    .custom-showcase .thumb .inner {
         height: 425px;
     }
     .post.post-list .thumb {
@@ -1583,11 +1583,11 @@ footer .footer-inner .copyright {
         text-align: center;
     }
     .featured-post-lg .post-title,
-    .about-showcase .post-title {
+    .custom-showcase .post-title {
         font-size: 26px;
     }
     .featured-post-lg .details,
-    .about-showcase .details {
+    .custom-showcase .details {
         bottom: 30px;
         left: 30px;
         right: 30px;
@@ -1597,11 +1597,11 @@ footer .footer-inner .copyright {
         width: 100%;
     }
     .post-carousel-widget .post-carousel,
-    .about-showcase-widget .post-carousel {
+    .custom-showcase-widget .post-carousel {
         margin: 0 12px;
     }
     .post-carousel-widget .post-carousel .post-title,
-    .about-showcase-widget .post-carousel .post-title {
+    .custom-showcase-widget .post-carousel .post-title {
         font-size: 16px;
     }
 }
