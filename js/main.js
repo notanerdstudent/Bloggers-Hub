@@ -1,6 +1,32 @@
+(function () {
+    if (typeof EventTarget !== "undefined") {
+        let func = EventTarget.prototype.addEventListener;
+        EventTarget.prototype.addEventListener = function (type, fn, capture) {
+            this.func = func;
+            if (typeof capture !== "boolean") {
+                capture = capture || {};
+                capture.passive = false;
+            }
+            this.func(type, fn, capture);
+        };
+    }
+})();
+
 $(window).on("load", function () {
     $(".loader-wrapper").fadeOut("slow");
     $(".site-content").fadeIn("slow");
+
+    $(".navbar-nav a").each(function () {
+        if (window.location.href == this.href) {
+            $(this).closest("li").addClass("active");
+        }
+    });
+
+    $(".vertical-menu a").each(function () {
+        if (window.location.href == this.href) {
+            $(this).closest("li").addClass("active");
+        }
+    });
 });
 
 $(document).ready(function () {
@@ -10,13 +36,13 @@ $(document).ready(function () {
         dots: false,
         arrows: false,
         slidesToShow: 2,
-        slidesToSCroll: 1,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToSCroll: 2,
+                    slidesToScroll: 2,
                     dots: false,
                     arrows: false,
                 },
@@ -25,7 +51,7 @@ $(document).ready(function () {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToSCroll: 1,
+                    slidesToScroll: 1,
                     dots: false,
                     arrows: false,
                 },
@@ -44,20 +70,47 @@ $(document).ready(function () {
         dots: false,
         arrows: false,
         slidesToShow: 1,
-        slidesToSCroll: 1,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 2,
-                    slidesToSCroll: 1,
+                    slidesToScroll: 1,
                 },
             },
             {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToSCroll: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                },
+            },
+        ],
+    });
+
+    $(".about-showcase-widget").slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     centerMode: true,
                 },
             },
@@ -66,9 +119,11 @@ $(document).ready(function () {
 
     $(".carousel-botNav-prev").click(function () {
         $(".post-carousel-widget").slick("slickPrev");
+        $(".about-showcase-widget").slick("slickPrev");
     });
     $(".carousel-botNav-next").click(function () {
         $(".post-carousel-widget").slick("slickNext");
+        $(".about-showcase-widget").slick("slickNext");
     });
 
     var $header = $(".header-default"),

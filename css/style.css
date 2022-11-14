@@ -739,21 +739,25 @@ section {
     margin-right: 0.8rem;
 }
 
-.featured-post-lg {
+.featured-post-lg,
+.about-showcase {
     position: relative;
 }
 
-.featured-post-lg:hover .thumb .inner {
+.featured-post-lg:hover .thumb .inner,
+.about-showcase:hover .thumb .inner {
     transform: scale(1.05);
 }
 
-.featured-post-lg .thumb {
+.featured-post-lg .thumb,
+.about-showcase .thumb {
     position: relative;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(32, 54, 86, 0.3);
 }
 
-.featured-post-lg .thumb::after {
+.featured-post-lg .thumb::after,
+.about-showcase .thumb::after {
     content: "";
     background: var(--dark-blue);
     display: block;
@@ -765,7 +769,8 @@ section {
     width: 100%;
 }
 
-.featured-post-lg .details {
+.featured-post-lg .details,
+.about-showcase .details {
     bottom: 50px;
     left: 50px;
     right: 50px;
@@ -773,15 +778,18 @@ section {
     z-index: 1;
 }
 
-.featured-post-lg .post-title {
+.featured-post-lg .post-title,
+.about-showcase .post-title {
     font-size: 32px;
 }
 
-.featured-post-lg .post-title a {
+.featured-post-lg .post-title a,
+.about-showcase .post-title {
     color: var(--white);
 }
 
-.featured-post-lg .thumb .inner {
+.featured-post-lg .thumb .inner,
+.about-showcase .thumb .inner {
     background-size: cover;
     background-position: center center;
     height: 533px;
@@ -971,7 +979,7 @@ section {
     position: relative;
 }
 
-.section-title {
+.section-title h3 {
     font-size: 24px;
     margin: 0;
 }
@@ -1552,7 +1560,8 @@ footer .footer-inner .copyright {
 }
 
 @media only screen and (max-width: 767px) {
-    .featured-post-lg .thumb .inner {
+    .featured-post-lg .thumb .inner,
+    .about-showcase .thumb .inner {
         height: 425px;
     }
     .post.post-list .thumb {
@@ -1573,10 +1582,12 @@ footer .footer-inner .copyright {
     .footer-inner {
         text-align: center;
     }
-    .featured-post-lg .post-title {
+    .featured-post-lg .post-title,
+    .about-showcase .post-title {
         font-size: 26px;
     }
-    .featured-post-lg .details {
+    .featured-post-lg .details,
+    .about-showcase .details {
         bottom: 30px;
         left: 30px;
         right: 30px;
@@ -1585,10 +1596,12 @@ footer .footer-inner .copyright {
         padding: 0px 20px;
         width: 100%;
     }
-    .post-carousel-widget .post-carousel {
+    .post-carousel-widget .post-carousel,
+    .about-showcase-widget .post-carousel {
         margin: 0 12px;
     }
-    .post-carousel-widget .post-carousel .post-title {
+    .post-carousel-widget .post-carousel .post-title,
+    .about-showcase-widget .post-carousel .post-title {
         font-size: 16px;
     }
 }
