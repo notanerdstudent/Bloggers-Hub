@@ -1043,6 +1043,9 @@ section {
     content: "";
     display: none;
 }
+.main-content .container-xl .row .col-lg-4 {
+    overflow-y: auto;
+}
 
 /* Carousel */
 .slick-arrows-top {
