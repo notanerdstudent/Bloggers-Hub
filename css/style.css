@@ -1043,9 +1043,6 @@ section {
     content: "";
     display: none;
 }
-.main-content .container-xl .row .col-lg-4 {
-    overflow-y: auto;
-}
 
 /* Carousel */
 .slick-arrows-top {
@@ -1269,6 +1266,9 @@ section {
 }
 
 /* Sidebar */
+.sidebar {
+    height: auto !important;
+}
 .widget {
     border: 1px solid var(--light-grey);
     padding: 35px 30px;
