@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bloggers Hub - About Us</title>
+        <title>Bloggers Hub - Registration</title>
         <!-- Icon -->
         <link
             rel="icon"
@@ -24,6 +24,7 @@
         />
 
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/register.css" />
     </head>
 
     <body>
@@ -40,7 +41,7 @@
             <div class="site-wrapper">
                 <div class="main-wrapper"></div>
                 <!-- Header -->
-                <header class="header-default">
+                <header class="header-default mb-0">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-xl">
                             <!-- Logo  -->
@@ -164,123 +165,141 @@
                     </nav>
                 </header>
 
-                <!-- Section -->
-                <section id="hero">
-                    <div class="container-xl">
-                        <div class="row gy-4">
-                            <div class="col-lg-12">
-                                <div class="custom-showcase-widget">
-                                    <div
-                                        class="post post-carousel custom-showcase"
-                                    >
-                                        <div class="details clearfix">
-                                            <h2 class="post-title">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit.
-                                                Hic, excepturi.
-                                            </h2>
-                                        </div>
-                                        <a href="#">
-                                            <div class="thumb rounded">
-                                                <div
-                                                    class="inner data-bg-image"
-                                                    data-bg-image="./assets/images/other/about-showcase-1.jpg"
-                                                ></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div
-                                        class="post post-carousel custom-showcase"
-                                    >
-                                        <div class="details clearfix">
-                                            <h2 class="post-title">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit.
-                                                Hic, excepturi.
-                                            </h2>
-                                        </div>
-                                        <a href="#">
-                                            <div class="thumb rounded">
-                                                <div
-                                                    class="inner data-bg-image"
-                                                    data-bg-image="./assets/images/other/about-showcase-2.jpg"
-                                                ></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="slick-arrows-bot">
-                                    <buttton
-                                        class="carousel-botNav-prev slick-custom-buttons"
-                                        type="button"
-                                        data-role="none"
-                                        aria-label="Previous"
-                                    >
-                                        <i class="icon-arrow-left"></i>
-                                    </buttton>
-                                    <buttton
-                                        class="carousel-botNav-next slick-custom-buttons"
-                                        type="button"
-                                        data-role="none"
-                                        aria-label="Next"
-                                    >
-                                        <i class="icon-arrow-right"></i>
-                                    </buttton>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 <!-- Main Content -->
-                <section class="main-content">
-                    <div class="container-xl">
-                        <div class="section-header">
-                            <h1 class="section-title">About Us</h1>
-                        </div>
-                        <div class="row gy-4">
-                            <!-- Left Part -->
-                            <div class="col-lg-8">
-                                <div class="padding-30 rounded bordered">
-                                    <h6 class="post-title lh-base fw-normal">
-                                        Lorem ipsum dolor sit amet consectetur,
-                                        adipisicing elit. Aliquam, facere harum!
-                                        Neque ad magnam amet perspiciatis vitae
-                                        omnis deserunt laborum, commodi, dicta,
-                                        nostrum nesciunt labore non adipisci.
-                                        Eum ipsa odit architecto id dolore et
-                                        voluptatibus? Voluptate cumque
-                                        distinctio saepe ducimus nulla inventore
-                                        dicta sed iure, eaque, aspernatur,
-                                        laudantium nobis tempore recusandae
-                                        perferendis ipsam aliquid minus officia
-                                        rem numquam voluptatum fugit mollitia.
-                                        Blanditiis aperiam illum nesciunt rerum
-                                        perferendis sequi! In, dignissimos quos
-                                        laudantium ratione tempore quidem!
-                                    </h6>
-                                </div>
-                            </div>
-                            <!-- Right Part -->
-                            <div class="col-lg-4">
-                                <div class="sidebar">
-                                    <!-- About Site -->
-                                    <div class="widget rounded">
-                                        <div class="widget-about text-center">
-                                            <img
-                                                src="./assets/images/logo/logo-lg.png"
-                                                alt=""
-                                                class="logo"
-                                            />
-                                        </div>
+                <section class="main-content mt-0">
+                    <div class="container-fluid main-container">
+                        <div class="forms-container">
+                            <div class="signin-signup">
+                                <form action="#" class="sign-in-form">
+                                    <h2 class="title">Sign in</h2>
+                                    <div class="input-field">
+                                        <i class="fas fa-user"></i>
+                                        <input
+                                            type="text"
+                                            placeholder="Username"
+                                        />
                                     </div>
+                                    <div class="input-field">
+                                        <i class="fas fa-lock"></i>
+                                        <input
+                                            type="password"
+                                            placeholder="Password"
+                                        />
+                                    </div>
+                                    <input
+                                        type="submit"
+                                        value="Login"
+                                        class="btn solid"
+                                    />
+                                    <p class="social-text">
+                                        Or Sign in with social platforms
+                                    </p>
+                                    <div class="social-media">
+                                        <a href="#" class="social-icon">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                    </div>
+                                </form>
+                                <form action="#" class="sign-up-form">
+                                    <h2 class="title">Sign up</h2>
+                                    <div class="input-field">
+                                        <i class="fas fa-user"></i>
+                                        <input
+                                            type="text"
+                                            placeholder="Username"
+                                        />
+                                    </div>
+                                    <div class="input-field">
+                                        <i class="fas fa-envelope"></i>
+                                        <input
+                                            type="email"
+                                            placeholder="Email"
+                                        />
+                                    </div>
+                                    <div class="input-field">
+                                        <i class="fas fa-lock"></i>
+                                        <input
+                                            type="password"
+                                            placeholder="Password"
+                                        />
+                                    </div>
+                                    <input
+                                        type="submit"
+                                        class="btn"
+                                        value="Sign up"
+                                    />
+                                    <p class="social-text">
+                                        Or Sign up with social platforms
+                                    </p>
+                                    <div class="social-media">
+                                        <a href="#" class="social-icon">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="panels-container">
+                            <div class="panel left-panel">
+                                <div class="content">
+                                    <h3>New here ?</h3>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Debitis, ex ratione.
+                                        Aliquid!
+                                    </p>
+                                    <button
+                                        class="btn transparent"
+                                        id="sign-up-btn"
+                                    >
+                                        Sign up
+                                    </button>
                                 </div>
+                                <img
+                                    src="./assets/svg/signup.svg"
+                                    class="image mt-3"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="panel right-panel">
+                                <div class="content">
+                                    <h3>One of us ?</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nostrum laboriosam ad
+                                        deleniti.
+                                    </p>
+                                    <button
+                                        class="btn transparent"
+                                        id="sign-in-btn"
+                                    >
+                                        Sign in
+                                    </button>
+                                </div>
+                                <img
+                                    src="./assets/svg/login.svg"
+                                    class="image mt-3"
+                                    alt=""
+                                />
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <footer>
+                <footer class="mt-0">
                     <div class="container-xl">
                         <div class="footer-inner">
                             <div
@@ -449,5 +468,6 @@
         <script src="./js/slick.js"></script>
         <script src="./js/jquery.sticky-sidebar.js"></script>
         <script src="./js/main.js"></script>
+        <script src="./js/register-app.js"></script>
     </body>
 </html>

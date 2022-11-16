@@ -133,7 +133,7 @@ a:focus {
     position: fixed;
     height: 100vh;
     width: 100%;
-    z-index: 5;
+    z-index: 15;
     transition: all 0.3s ease-in-out;
 }
 
@@ -162,7 +162,7 @@ a:focus {
     padding: 25px 0;
     transform: translateY(-100%);
     transition: 0.2s transform cubic-bezier(0.3, 0.73, 0.3, 0.7);
-    z-index: 4;
+    z-index: 10;
 }
 
 body.down .header-default.clone {
@@ -396,7 +396,7 @@ button:focus {
     right: 0;
     top: 0;
     width: 300px;
-    z-index: 6;
+    z-index: 11;
     box-shadow: -4px 0px 20px rgba(32, 54, 86, 0.2);
     transform: translateX(350px);
     transition: all 0.3s ease-in-out;
@@ -536,7 +536,7 @@ button:focus {
     top: 0;
     height: 100vh;
     width: 100%;
-    z-index: 6;
+    z-index: 13;
     opacity: 0;
     visibility: hidden;
 }
@@ -1442,7 +1442,7 @@ footer .footer-inner .copyright {
     text-decoration: none;
     border-radius: 25px;
     padding: 6px 20px;
-    z-index: 4;
+    z-index: 9;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1497,20 +1497,20 @@ footer .footer-inner .copyright {
 
 /* Responsive */
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1.3rem;
         padding-left: 1.3rem;
     }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .container-xl {
         max-width: 1140px;
     }
 }
 
-@media (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {
     .container-xl {
         max-width: 1140px;
     }
