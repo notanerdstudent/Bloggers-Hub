@@ -2,7 +2,7 @@
 
 > A Blog Website made using HTML, CSS, JS.
 
-[x] Home Page
+[X] Home Page
 [x] About Us Page
 [x] Contact Us Page
 [x] Privacy Policy Page
