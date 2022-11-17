@@ -18,7 +18,8 @@ $(window).on("load", function () {
 
     $(".navbar-nav a").each(function () {
         if (
-            window.location.href == window.location.origin + "/" &&
+            window.location.href ==
+                window.location.origin + window.location.pathname &&
             this.href.includes("/index.html")
         ) {
             $(this).closest("li").addClass("active");
