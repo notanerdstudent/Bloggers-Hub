@@ -17,7 +17,12 @@ $(window).on("load", function () {
     $(".site-content").fadeIn("slow");
 
     $(".navbar-nav a").each(function () {
-        if (window.location.href.includes(this.href)) {
+        if (
+            window.location.href == window.location.origin + "/" &&
+            this.href.includes("/index.html")
+        ) {
+            $(this).closest("li").addClass("active");
+        } else if (window.location.href.includes(this.href)) {
             $(this).closest("li").addClass("active");
         }
     });
