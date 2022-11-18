@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap");
 
 :root {
-    --yellow: #febb12;
     --persian-blue: #023356;
     --dark-blue: #061843;
     --nice-blue: #006fae;
@@ -677,7 +676,8 @@ section {
     position: relative;
 }
 
-.post .thumb.rounded .inner {
+.post .thumb.rounded .inner,
+.post .rounded .inner {
     border-radius: 10px;
     overflow: hidden;
 }
@@ -704,13 +704,21 @@ section {
     color: var(--grey);
 }
 
+.meta-custom {
+    font-size: 16px !important;
+}
+
+.meta-custom li::after {
+    display: none !important;
+}
+
 .post .meta a {
     color: var(--grey);
     font-weight: 400;
 }
 
 .post .meta a:hover {
-    color: var(--yellow);
+    color: var(--purple);
 }
 
 .post .meta i {
@@ -935,7 +943,8 @@ section {
     position: relative;
 }
 
-.post .thumb.rounded .inner {
+.post .thumb.rounded .inner,
+.post .rounded .inner {
     border-radius: 10px;
     overflow: hidden;
 }
