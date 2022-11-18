@@ -19,12 +19,17 @@ $(window).on("load", function () {
     $(".navbar-nav a").each(function () {
         if (
             window.location.href ==
-                window.location.origin + window.location.pathname &&
+            window.location.origin + window.location.pathname + "index.html" &&
             this.href.includes("/index.html")
         ) {
             $(this).closest("li").addClass("active");
+        } if ((window.location.href ===
+            window.location.origin + window.location.pathname.replace(/\.[a-zA-Z]+/, '')) &&
+            this.href.includes("/index.html")) {
+            $(this).closest("li").addClass("active");
         } else if (window.location.href.includes(this.href)) {
             $(this).closest("li").addClass("active");
+            return;
         }
     });
 
